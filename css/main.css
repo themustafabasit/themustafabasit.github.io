@@ -1,55 +1,61 @@
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  bor=der: 1px solid red;
+  order: 1px solid red;
 }
 
-header{
+body {
+  margin-bottom: 900px;
+  background-color: #f9f9f9;
+}
+
+header {
   overflow: auto;
+  background-color: white;
 }
 
-.header-inner{
+.header-inner {
   overflow: auto;
-  padding: 15px 50px 0px 50px;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 4px #ccc;
-  
-  margin-bottom: 5px;
+  padding: 5px 50px 0px 50px;
+  border-bottom: 1px solid #d9d9d9;
+
 
 }
-header .left{
+
+header .left {
   float: left;
 }
 
-header .right{
+header .right {
   float: right;
 }
 
 header .right,
-header .left{
+header .left {
   display: inline-block;
 }
 
-.hey{
+.hey {
   font: normal 14px sans-serif;
   text-transform: capitalize;
   color: #333;
   margin-bottom: 5px;
 }
 
-.hey-anchor-container img{
- width: 30px;
- height: 30px; 
- border-radius: 50%;
+.hey-anchor-container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
-header .right{
-overflow: hidden;
+
+header .right {
+  overflow: hidden;
 }
 
-header .right a{
+header .right a {
   position: relative;
   display: inline-block;
   float: left;
@@ -64,14 +70,19 @@ header .right a{
   transition: all .3s ease-out;
   vertical-align: middle;
 }
-header .right a::after{
+
+header .right a:hover {
+  background-color: #f9f9f9;
+}
+
+header .right a::after {
   content: '';
-		position: absolute;
-    left: 0;
-    width: 100%;
-  	height: 5px;
-    bottom: -5px;
-    transition: all .2s ease-out;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  bottom: -5px;
+  transition: all .2s ease-out;
 }
 
 
@@ -79,7 +90,7 @@ header .right a:nth-child(even)::after {
   background: dodgerblue;
 }
 
-header .right a:nth-child(even):hover{
+header .right a:nth-child(even):hover {
   color: dodgerblue;
 }
 
@@ -96,8 +107,7 @@ header .right a:hover::after {
   bottom: 0px !important;
 }
 
-header .right a:hover{
-}
+header .right a:hover {}
 
 
 .bottom_line li a:hover:not(.active)::after {
@@ -105,66 +115,71 @@ header .right a:hover{
 }
 
 
-.main-home-outer{
+.main-home-outer {
   width: 1100px;
+  background-color: white;
   margin: auto;
+  padding-top: 30px;
 
 }
 
-.main-home{
+.main-home {
   display: flex;
   margin: auto;
-  overflow: hidden;
-  borer: 2px solid green;
-
+  margin-right: 20px;
+  margin-left: 20px;
 }
+
 .main-home .left,
-.main-home .right{
+.main-home .right {}
+
+.main-home .left {
+  flex: 2;
+  overflow: hidden;
 }
 
-.main-home .left{ 
-flex: 2;
-}
-
-.main-home .right{
-flex: 1;
-overflow:hidden;
+.main-home .right {
+  flex: 1;
 }
 
 .main-home .right img {
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 10px #999;
+  z-index: 99999999999;
+  padding: 10px;
+  border-radius: 50%;
   border-radius: 4px;
-  box-shadow: inset 0 0 5px #afafaf !important;
-  padding: 5px;
+
 }
 
-.hi-whole{
+.hi-whole {
   width: 90%;
   height: 100%;
   margin-left: -70px;
-  background:yellow;
+  background: yellow;
   transform: skewX(30deg);
 }
+
 .hi,
 .iam,
-.myquote{
+.myquote {
   display: inline-block;
   transform: skewX(-30deg);
 }
 
-.hi{
+.hi {
   margin-left: 200px;
   font: bold 100px sans-serif;
 }
 
-.iam{
+.iam {
   margin-left: 153px;
   font: bold 54px sans-serif;
   text-transform: uppercase;
 }
 
-.iam b{
+.iam b {
   background: white;
   padding-left: 6px;
   padding-right: 6px;
@@ -174,7 +189,7 @@ overflow:hidden;
   border-bottom: 10px dashed yellow;
 }
 
-.myquote{
+.myquote {
   margin-left: 57px;
   font: bold 50px sans-serif;
   text-transform: uppercase;
@@ -185,4 +200,48 @@ overflow:hidden;
   text-align: -webkit-center;
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+/*//////////////////////////*/
+.who-i-am {
+  margin-top: 150px;
+  background: #f9f9f9;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+
+.heading-li {
+  position: absolute;
+  display: inline-block;
+  color: sblack;
+  box-shadow: 0 0 5px #e0e0e0;
+  transform: translateY(-80px) skewX(40deg);
+  background-color: #fcef2e;
+}
+
+.heading-li span {
+  display: inline-block;
+  text-transform: uppercase;
+  transform: skewX(-40deg);
+  font: bold 20px sans-serif;
+  padding: 6px 20px;
+  border: 15px dotted white;
+}
+
+.who-bio {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.who-bio p {
+  width: 500px;
+  display: inline-block;
+  border: 1px solid #333;;
+  text-align: justify;
+  font: normal 15px sans-serif;
+  word-spacing: 5px;
+  line-height: 30px;
 }
