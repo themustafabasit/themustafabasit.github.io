@@ -3,7 +3,6 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  bowrder: 1px solid red;
 
 }
 
@@ -17,8 +16,12 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   overflow: auto;
   background-color: white;
+  background-color: white;
+  z-index:9999999999;
 }
 
 .header-inner {
@@ -208,6 +211,9 @@ header .right a:hover {}
 }
 
 /*//////////////////////////*/
+.main-home{
+  padding-top: 100px;
+}
 .who-i-am,
 .tech-stack {
   background: white;
@@ -247,7 +253,7 @@ header .right a:hover {}
   display: inline-block;
   border: 20px dashed white;
   background-color: #fcef2e;
-  padding: 10px 30px;
+  padding: 90px 120px;
   text-align: justify;
   font: normal 18px sans-serif;
   word-spacing: 5px;
@@ -271,8 +277,7 @@ header .right a:hover {}
 .tech-container {
   display: flex;
   width: 100%;
-  padding: 20px 0px;
-  margin-bottom: 40px;
+  padding: 30px 0px;
 }
 
 .tech-item-div {
@@ -286,11 +291,11 @@ header .right a:hover {}
 .tech-item-div:hover {}
 
 .tech-item-div {
-  margin-right: 20px;
+  margin-right: 100px;
 }
 
 .tech-item-div:first-of-type {
-  margin-left: 20px;
+  margin-left: 100px;
 }
 
 
@@ -304,42 +309,6 @@ header .right a:hover {}
   display: block;
   text-align: center;
   background: white;
-  border: 1px solid #eee;
-  z-index: 100;
-  font: bold 18px sans-serif;
-}
-
-.tech-proficiency::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: linear-gradient(45deg, white, #fcef2e);
-}
-
-.java-p::after {
-  width: 90%;
-
-}
-
-.dot-net-p::after {
-  width: 60%;
-
-}
-
-.python-p::after {
-  width: 70%;
-
-}
-
-.sql-server-p::after {
-  width: 85%;
-
-}
-
-.tech-proficiency b {
-  font: bold 19px sans-serif;
-  color: black;
+  font: normal 13px sans-serif;
+  text-transform: uppercase;
 }
