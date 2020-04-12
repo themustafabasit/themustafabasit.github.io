@@ -3,7 +3,6 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-
 }
 
 html {
@@ -21,12 +20,12 @@ header {
   overflow: auto;
   background-color: white;
   background-color: white;
-  z-index:9999999999;
+  z-index: 9999999999;
 }
 
 .header-inner {
   overflow: auto;
-  padding: 5px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
   border-bottom: 1px solid #d9d9d9;
 
 
@@ -34,6 +33,7 @@ header {
 
 header .left {
   float: left;
+  margin-top: 2px;
 }
 
 header .right {
@@ -56,8 +56,28 @@ header .left {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+
 }
 
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hey-anchor-container img:hover {
+  animation-name: jump;
+  animation-duration: .3s;
+
+}
 
 header .right {
   overflow: hidden;
@@ -69,8 +89,8 @@ header .right a {
   float: left;
   font: normal 20px sans-serif;
   color: #333;
-  height: 70px;
-  line-height: 70px;
+  height: 60px;
+  line-height: 60px;
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
@@ -127,7 +147,7 @@ header .right a:hover {}
   width: 1100px;
   background-color: white;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 75px;
 
 }
 
@@ -142,7 +162,7 @@ header .right a:hover {}
 .main-home .right {}
 
 .main-home .left {
-  flex: 2;
+  flex: 3;
   overflow: hidden;
 }
 
@@ -150,22 +170,25 @@ header .right a:hover {}
   flex: 1;
 }
 
-.main-home .right img {
+.main-home .right .user-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   box-shadow: 0 0 10px #999;
   z-index: 99999999999;
   padding: 10px;
   border-radius: 50%;
-  border-radius: 4px;
-
 }
+
+.main-home .right .user-signature {
+  width: 100%;
+}
+
 
 .hi-whole {
   width: 90%;
   height: 100%;
-  margin-left: -70px;
-  background: yellow;
+  margin-left: 10px;
+  background: #fcef2e;
   transform: skewX(30deg);
 }
 
@@ -178,7 +201,7 @@ header .right a:hover {}
 
 .hi {
   margin-left: 200px;
-  font: bold 100px sans-serif;
+  font: bold 75px sans-serif;
 }
 
 .iam {
@@ -191,31 +214,37 @@ header .right a:hover {}
   background: white;
   padding-left: 6px;
   padding-right: 6px;
-  border-left: 10px dashed yellow;
-  border-right: 10px dashed yellow;
-  border-top: 10px dashed yellow;
-  border-bottom: 10px dashed yellow;
+  border: 12px dashed #fcef2e;
+  color: black;
+
+  font: normal 50px 'permanent marker'
 }
 
 .myquote {
   margin-left: 57px;
-  font: bold 50px sans-serif;
   text-transform: uppercase;
-  margin-top: 45px;
-  border: 10px dashed yellow;
+  margin-top: 20px;
+  border: 21px dashed #fcef2e;
   background: white;
+  color: red;
   margin-right: 58px;
   text-align: -webkit-center;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 45px;
+  margin-bottom: 36px;
+  font: normal 45px 'permanent marker'
 }
 
-/*//////////////////////////*/
-.main-home{
-  padding-top: 100px;
-}
+/*/
+  /////////////////////////*/
+.main-home {}
+
 .who-i-am,
-.tech-stack {
+.tech-stack,
+.education,
+.projects,
+.awards,
+.interests,
+.contact {
   background: white;
   margin-left: 40px;
   margin-right: 40px;
@@ -249,24 +278,61 @@ header .right a:hover {}
 }
 
 .who-bio p {
-  width: 900px;
+  width: 1000px;
   display: inline-block;
   border: 20px dashed white;
   background-color: #fcef2e;
-  padding: 90px 120px;
+  padding: 30px 50px;
   text-align: justify;
   font: normal 18px sans-serif;
   word-spacing: 5px;
   line-height: 30px;
+  font: bold 33px 'Long Cang'
+
+
 }
 
-.who-bio p img{
+.who-bio p img {
   display: inline-block;
-  width: 65px;
+  width: 130px;
   float: left;
   margin-right: 10px;
   border: 2px solid white;
+  border-radius: 50%
 }
+
+.download-container {
+  text-align: center;
+}
+
+.download-container a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font: bold 20px sans-serif;
+  background: red;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.download-container a::before {
+  content: "\f2dd";
+  font-family: Ionicons;
+  color: white;
+  margin-right: 5px;
+  transition: all .3s ease-in-out;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.download-container a:hover {
+  text-decoration: underline;
+}
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -309,6 +375,138 @@ header .right a:hover {}
   display: block;
   text-align: center;
   background: white;
-  font: normal 13px sans-serif;
+  font: bold 13px sans-serif;
   text-transform: uppercase;
+  text-decoration: underline;
+
+}
+
+.intermediate {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advanced {
+  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+.education-details-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.education-details-container .table-holder {
+  display: inline-block;
+}
+
+.education-details-container tr {
+  border: 1px solid red;
+}
+
+.education-details-container th {
+  color: #333;
+  font: bold 16px sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.education-details-container td {
+  text-align: left;
+  font: normal 17px sans-serif;
+  color: #333;
+  padding: 20px 60px 20px 0px;
+}
+
+.education-details-container td:last-of-type {
+  padding-right: 0 !important;
+}
+
+
+.education-details-container td a {
+  color: darkblue;
+  text-transform: capitalize;
+}
+
+.education-details-container td a:hover {
+  text-decoration: none;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.projects-details-container {
+  text-align: center;
+}
+
+.projects-details-container .table-holder {
+  display: inline-block;
+}
+
+.projects-details-container .table-holder th,
+.projects-details-container .table-holder td,
+.projects-details-container .table-holder th a,
+.projects-details-container .table-holder th span {
+  text-align: left;
+}
+
+.projects-details-container .table-holder th,
+.projects-details-container .table-holder td {
+  padding: 30px 10px;
+}
+
+.projects-details-container .table-holder th {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: normal;
+  font: bold 18px sans-serif;
+
+}
+
+.projects-details-container .table-holder td a {
+  color: darkblue;
+  font: normal 13px sans-serif;
+}
+
+.projects-details-container .table-holder td span {
+  color: #F44336;
+}
+
+.projects-details-container .table-holder td {
+  color: #333;
+  font: normal 17px sans-serif
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                    awards css is shared with project's section - see above*/
+.awards-details-container .table-holder .dated span {
+  color: #F44336;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.interests-text-container {
+  overflow: auto;
+}
+
+.interests-text-container .interest-text {
+  display: inline-block;
+  float: left;
+  margin: 30px 80px  10px 50px;
+  padding:  20px 30px ;
+  font: bold 33px 'Long Cang';
+  border-radius: 4px;
+  box-shadow: 0 0 10px #ddd;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+}
+.interests-text-container .interest-text:nth-of-type(even) {
+  background: #fcef2e;
 }
