@@ -7,7 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="script" href="./js/main.js">
+  <script type="text/javascript" src="./js/main.js"></script>
   <link rel="stylesheet" href="./resources/ionicons/css/ionicons.css">
   <title>Wasit Shafi, MCA Student, JMI - Delhi</title>
 </head>
@@ -16,7 +16,7 @@
   <header>
     <div class="header-inner">
       <div class="left">
-        <div class="hey">hey, I'm here </div>
+        <button class="bubble-hey">hey, I'm here</button>
         <div class="hey-anchor-container">
           <a href="#about"><img src="./img/github-round.png" title="Github"></a>
           <a href="#"><img src="./img/linkedin round.png" title="Linkedin"></a>
@@ -32,6 +32,7 @@
 
 
       <div class="right">
+        <a href="#home">home</a>
         <a href="#about">about</a>
         <a href="#skills">skills</a>
         <a href="#education">education</a>
@@ -45,7 +46,7 @@
   </header>
 
 
-  <main class="main">
+  <main class="main" id="home">
     <div class="main-home-outer">
       <div class="main-home">
         <div class="left">
@@ -68,15 +69,21 @@
 
         <div class="who-i-am-inner">
           <div class="who-bio">
+            <div class="download-container">
+              <!-- <a href="./resources/resume.pdf" target="_blank">Download my resume</a> -->
+              <a target="_blank" onclick="doTask()">Download my resume</a>
+
+              <div id="snackbar">
+                <span>Thanks, Your downnload will start soon</span>
+              </div>
+            </div>
             <p><img src="./img/user-home.jpg" alt=""> Hi, I'm a Front-End Developer for ChowNow in Los Angeles, CA.
               I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.As a
               web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and
               my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at
               a high growth company.
             </p>
-            <div class="download-container">
-              <a href="resources/resume.pdf" target="_blank" download="wasit-shafi-resume">Download my resume</a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -166,76 +173,64 @@
 
 
       <!--////////////////////////////////////////////////////////////////////////////////////////////-->
-
       <div class="education" id="education">
         <div class="education-inner">
           <li class="heading-li" id="about"><span>Education</span></li>
 
+
           <div class="education-details-container">
-            <div class="table-holder">
-              <table>
-                <tr>
-                  <th>course/class</th>
-                  <th> &nbsp;%</th>
-                  <th>from</th>
-                  <th>year</th>
-                  <th>location</th>
-                </tr>
-
-                <tr>
-                  <td>PG - M.C.A</td>
-                  <td> --- </td>
-                  <td><a href="https://www.jmi.ac.in/" target="_blank">jamia millia islamia</a></td>
-                  <td>2018 - present</td>
-                  <td><a
-                      href="https://www.google.com/maps/place/Jamia+Nagar,+Okhla,+New+Delhi,+Delhi+110025/@28.5580222,77.2737794,14z/data=!3m1!4b1!4m5!3m4!1s0x390ce40b2f9e830d:0x864d93c20efa1e78!8m2!3d28.5538528!4d77.295553s"
-                      targe="_blank">Okhla, New Delhi</a></td>
-                </tr>
-
-                <tr>
-                  <td>UG - B.C.A</td>
-                  <td>82%</td>
-                  <td><a href="http://www.ascollegelive.net/" target="_blank">amar singh college</a></td>
-                  <td>2014 - 2018</td>
-                  <td><a
-                      href="https://www.google.com/maps/place/Srinagar/@34.1069233,74.6666679,11z/data=!3m1!4b1!4m5!3m4!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6!8m2!3d34.0836708!4d74.7972825">Srinagar,
-                      Jammu &amp; Kashmir</a>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td>[10 + 2] - Commerce</td>
-                  <td> 76%</td>
-                  <td><a href="http://jkbose.ac.in/default.aspx" target="_blank">GBHSS, Batamaloo</a></td>
-                  <td>2013</td>
-                  <td><a
-                      href="https://www.google.com/maps/place/Srinagar/@34.1069233,74.6666679,11z/data=!3m1!4b1!4m5!3m4!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6!8m2!3d34.0836708!4d74.7972825">Srinagar,
-                      Jammu &amp; Kashmir</a>
-                  </td>
-                </tr>
-
-
-
-
-                <tr>
-                  <td>10<sup>th</sup></td>
-                  <td> 62%</td>
-                  <td><a href="http://jkbose.ac.in/default.aspx" target="_blank">Modern High School</a></td>
-                  <td>upto 2011</td>
-                  <td><a
-                      href="https://www.google.com/maps/place/Srinagar/@34.1069233,74.6666679,11z/data=!3m1!4b1!4m5!3m4!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6!8m2!3d34.0836708!4d74.7972825">Srinagar,
-                      Jammu &amp; Kashmir</a>
-                  </td>
-                </tr>
-
-              </table>
+            <div class="div-as-line">
+              <button class="hexa">Post graduation</button>
+              <div class="hexa-partner">
+                <li class="what">Master of Computer Application (M.C.A)</li>
+                <li class="percentage"><span> --% </span> <b> ( 2018 - present ) </b></li>
+                <li class="from"><a href="https://www.jmi.ac.in/" target="_blank">jamia millia islamia</a></li>
+              </div>
             </div>
           </div>
 
+          <div class="education-details-container">
+            <div class="div-as-line">
+              <button class="hexa">graduation</button>
+              <div class="hexa-partner">
+                <li class="what">Bachelor of Computer Application (B.C.A)</li>
+                <li class="percentage"><span> 74% </span> <b> ( 2014 - 2018 ) </b></li>
+                <li class="from"><a href="http://www.kashmiruniversity.net/" target="_blank">kashmir
+                    university</a></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-details-container">
+            <div class="div-as-line">
+              <button class="hexa">intermediate</button>
+              <div class="hexa-partner">
+                <li class="what">commerce with stenography<sup class="as-additional"> * ( as additional subject )</sup>
+                </li>
+                <li class="percentage"><span> 76% </span> <b> ( 2013 ) </b></li>
+                <li class="from"><a href="http://jkbose.ac.in/default.aspx" target="_blank">GBHSS, Batamaloo</a>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-details-container">
+            <div class="div-as-line">
+              <button class="hexa">matriculation</button>
+              <div class="hexa-partner">
+                <li class="what">10<sup>th</sup></li>
+                <li class="percentage"><span> 62% </span> <b> ( 2011 ) </b> </li>
+                <li class="from"><a href="http://jkbose.ac.in/default.aspx" target="_blank">Modern High School</a>
+                </li>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
+
+
+
 
       <!--////////////////////////////////////////////////////////////////////////////////////////////-->
 
@@ -390,7 +385,7 @@
           <li class="heading-li" id="about"><span>Interests</span></li>
 
           <div class="interests-text-container">
-            
+
             <li class="interest-text">gamming</li>
             <li class="interest-text">listening music</li>
             <li class="interest-text">DIY</li>
@@ -404,20 +399,11 @@
 
           </div>
 
-
         </div>
       </div>
 
 
-
-
-
-
-
-
-
-
-
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
 
