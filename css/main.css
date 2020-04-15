@@ -5,12 +5,33 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fcef2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: tomato;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-left: 1px solid #ddd;
+}
+
+::selection {
+  background: limegreen;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin-bottom: 900px;
   background-color: #f9f9f9;
 }
 
@@ -104,7 +125,7 @@ header .left {
 
 .hey-anchor-container a img:hover {
   animation-name: jump;
-  animation-duration: .5s;
+  animation-duration: .4s;
 
 }
 
@@ -734,4 +755,260 @@ header .right a:hover {}
 
 .interests-text-container .interest-text:nth-of-type(even) {
   background: #fcef2e;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contact {}
+
+.contact-inner {}
+
+.contact-divs-holder {
+  overflow: auto;
+}
+
+.contact .contact-left {
+  float: left;
+}
+
+.contact .contact-left .feel-free-to {
+  display: block;
+  font: normal 17px sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .contact-left>a {
+  display: block;
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 40px;
+  font: normal 16px sans-serif;
+  color: #333;
+
+}
+
+.contact .contact-left>a:hover {
+  text-decoration: none;
+}
+
+
+.contact .contact-left>a::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  left: 0;
+  top: -50%;
+
+}
+
+.contact .contact-left .email::before {
+  background-image: url('../img/email_square.png');
+}
+
+.contact .contact-left .call-me::before {
+  background-image: url('../img/call-me-logo.png');
+}
+
+.contact .contact-left .whatsapp::before {
+  background-image: url('../img/whatsapp-logo.png');
+}
+
+.contact .contact-left .telegram::before {
+  background-image: url('../img/telegram-logo.png');
+}
+
+
+
+.presently-in {
+  display: block;
+  font: normal 15px sans-serif;
+  text-transform: capitalize;
+  margin-top: 55px;
+}
+
+.presently-in b {
+  margin-right: 10px;
+}
+
+
+.presently-in a {
+  position: relative;
+  font: inherit;
+  color: darkblue;
+  padding-left: 38px;
+}
+
+.presently-in a::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+
+}
+
+.presently-in a::before {
+  background-image: url('../img/maps-logo.png');
+}
+
+.presently-in a:hover {
+  text-decoration: none;
+
+
+}
+
+
+
+
+.contact .contact-right {
+  float: right;
+}
+
+.have-a-question {
+  text-decoration: none;
+  display: inline-block;
+  font: bold 25px sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bottom-message-form {}
+
+.bottom-message-form li {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.bottom-message-form li:last-of-type {
+  margin-bottom: 15px;
+
+}
+
+
+.bottom-message-form li span {
+  color: red;
+  font: bold 20px sans-serif;
+}
+
+
+.bottom-message-form .form-name,
+.bottom-message-form .form-email,
+.bottom-message-form .form-textarea {
+  font: normal 15px sans-serif;
+
+}
+
+.bottom-message-form .form-name,
+.bottom-message-form .form-email {
+  width: 300px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #fff;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.bottom-message-form .form-name {
+  text-transform: capitalize;
+}
+
+
+.bottom-message-form .form-email {
+  text-transform: lowercase;
+}
+
+.bottom-message-form .form-textarea {
+  width: 580px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #fff;
+  margin-right: 10px;
+  padding: 10px;
+  resize: vertical;
+}
+
+.bottom-message-form .form-name:invalid,
+.bottom-message-form .form-email:invalid,
+.bottom-message-form .form-textarea:invalid {
+  color: tomato;
+  text-decoration: underline;
+}
+
+.bottom-message-form .form-name:valid,
+.bottom-message-form .form-email:valid,
+.bottom-message-form .form-textarea:valid {
+  color: #0fc955;
+  text-decoration: none;
+}
+
+.bottom-message-form .form-name:valid .special-span {
+  color: #ccaa01;
+}
+
+
+
+.bottom-message-form .form-name::placeholder,
+.bottom-message-form .form-email::placeholder,
+.bottom-message-form .form-textarea::placeholder {
+  text-transform: capitalize;
+}
+
+
+.bottom-message-form .form-send-btn {
+  font: normal 18px 'permanent marker';
+  border: none;
+  background: #fcef2e;
+  box-shadow: 0 3px 0 0 #d2c500;
+  color: #222;
+  border-radius: 4px;
+  padding: 18px 50px;
+  cursor: pointer;
+}
+
+.bottom-message-form .form-send-btn:hover {
+  font-weight: bold;
+  box-shadow: 0 0 40px #fcef2e;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+footer {
+  background-color: #fcef2e;
+}
+
+.credits-container {
+  text-align: center;
+}
+
+.credits-text {
+  font: normal 19px 'permanent marker';
+padding: 10px 0px;
+}
+
+.credits-text .design-and {
+  margin-left: 50px;
+}
+
+.credits-text .heart {
+  color: #e25555;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.credits-text a{
+  text-decoration: underline;
+  color: darkblue;
+}
+.credits-text a:hover{
+text-decoration: none;
 }
