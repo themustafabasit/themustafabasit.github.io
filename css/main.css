@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -37,6 +39,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   overflow: auto;
   background-color: white;
@@ -76,13 +79,13 @@ header .left {
 .bubble-hey {
   position: relative;
   display: inline-block;
-  padding: 10px;
+  padding: 6px 10px;
   border: none;
   background-color: #fcef2e;
-  border-radius: 6px;
-  font: bold 16px sans-serif;
+  border-radius: 3px;
+  font: bold 13px sans-serif;
   text-transform: capitalize;
-  margin-top: 5px;
+  margin-top: 2px;
 
 }
 
@@ -155,8 +158,8 @@ header .right a {
   float: left;
   font: normal 19px 'permanent marker';
   color: #333;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
@@ -209,11 +212,13 @@ header .right a:hover {}
 }
 
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .main-home-outer {
   width: 1100px;
   background-color: white;
   margin: auto;
-  padding-top: 75px;
+  padding-top: 80px !important;
 
 }
 
@@ -322,14 +327,14 @@ header .right a:hover {}
   color: black;
   transform: skewX(40deg);
   background-color: #fcef2e;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .heading-li span {
   display: inline-block;
   text-transform: uppercase;
   transform: skewX(-40deg);
-  font: normal 25px 'permanent marker';
+  font: normal 20px 'permanent marker';
   padding: 10px 25px;
   border: 10px dashed white;
 }
@@ -340,23 +345,19 @@ header .right a:hover {}
 }
 
 .who-bio p {
-  width: 1000px;
   display: inline-block;
-  border: 20px dashed white;
+  border: 12px dashed white;
   background-color: #fcef2e;
-  padding: 30px 50px;
+  padding: 18px 30px;
   text-align: justify;
-  font: normal 18px sans-serif;
   word-spacing: 5px;
   line-height: 30px;
-  font: bold 33px 'Long Cang'
-
-
+  font: normal 32px 'Long Cang';
 }
 
 .who-bio p img {
   display: inline-block;
-  width: 130px;
+  width: 125px;
   float: left;
   margin-right: 10px;
   border: 2px solid white;
@@ -457,6 +458,11 @@ header .right a:hover {}
 
 .tech-stack-inner {}
 
+.tech-container:first-of-type {
+  margin-top: 20px;
+}
+
+
 .tech-container {
   display: flex;
   width: 100%;
@@ -478,7 +484,7 @@ header .right a:hover {}
 }
 
 .tech-item-div:first-of-type {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 
@@ -492,20 +498,30 @@ header .right a:hover {}
   display: block;
   text-align: center;
   background: white;
-  font: normal 15px 'permanent marker';
+  font: bold 11px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
+  padding-top: 10px;
 
+}
+
+.beginner {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intermediate {
   background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+  background: black;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .advanced {
   background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+  background: red;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -702,7 +718,7 @@ header .right a:hover {}
 
 .projects-details-container .table-holder th,
 .projects-details-container .table-holder td {
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 
 .projects-details-container .table-holder th {
@@ -715,22 +731,39 @@ header .right a:hover {}
 
 .projects-details-container .table-holder td a {
   color: darkblue;
-  font: normal 13px sans-serif;
+  font: normal 15px sans-serif;
 }
 
+.projects-details-container .table-holder td a:hover {
+  text-decoration: none;
+}
+
+
 .projects-details-container .table-holder td span {
+  display: inline-block;
+  margin-bottom: 3px;
   color: #F44336;
+  font: normal 13px sans-serif;
 }
 
 .projects-details-container .table-holder td {
   color: #333;
-  font: normal 17px sans-serif
+  font: normal 15px sans-serif;
+  word-spacing: 1px;
 }
 
+.projects-details-container .table-holder tr td:last-of-type {
+  text-align: justify;
+}
+
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*                                    awards css is shared with project's section - see above*/
+/*              
+                      awards css is shared with project's section - see above*/
 .awards-details-container .table-holder .dated span {
   color: #F44336;
+  font-size: 13px;
 }
 
 
@@ -781,46 +814,45 @@ header .right a:hover {}
 .contact .contact-left>a {
   display: block;
   position: relative;
-  margin-bottom: 26px;
-  padding-left: 40px;
+  margin-bottom: 10px;
   font: normal 16px sans-serif;
   color: #333;
-
+  margin-bottom: 20px
 }
 
 .contact .contact-left>a:hover {
   text-decoration: none;
 }
 
-
 .contact .contact-left>a::before {
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
-  left: 0;
-  top: -50%;
-
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .contact .contact-left .email::before {
-  background-image: url('../img/email_square.png');
+  content: 'Email: ';
 }
 
 .contact .contact-left .call-me::before {
-  background-image: url('../img/call-me-logo.png');
+  content: 'Phone: ';
 }
 
-.contact .contact-left .whatsapp::before {
-  background-image: url('../img/whatsapp-logo.png');
+.contact .contact-left .country-code {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 5px;
 }
 
-.contact .contact-left .telegram::before {
-  background-image: url('../img/telegram-logo.png');
+.contact .contact-left>a sup {
+  display: inline-block;
+  text-decoration: none;
+  color: tomato;
+  margin-left: 5px;
 }
+
+
+
 
 
 
@@ -862,8 +894,6 @@ header .right a:hover {}
 
 .presently-in a:hover {
   text-decoration: none;
-
-
 }
 
 
@@ -876,7 +906,7 @@ header .right a:hover {}
 .have-a-question {
   text-decoration: none;
   display: inline-block;
-  font: bold 25px sans-serif;
+  font: bold 22px sans-serif;
   color: #333;
   margin-bottom: 10px;
 }
@@ -888,6 +918,7 @@ header .right a:hover {}
   text-decoration: none;
   margin-bottom: 10px;
 }
+
 .bottom-message-form li:last-of-type {
   margin-bottom: 15px;
 
@@ -927,7 +958,7 @@ header .right a:hover {}
 }
 
 .bottom-message-form .form-textarea {
-  width: 580px;
+  width: 560px;
   height: 150px;
   border: 1px solid rgba(0, 0, 0, .12);
   background: #fff;
@@ -960,6 +991,7 @@ header .right a:hover {}
 .bottom-message-form .form-email::placeholder,
 .bottom-message-form .form-textarea::placeholder {
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 
@@ -992,7 +1024,7 @@ footer {
 
 .credits-text {
   font: normal 19px 'permanent marker';
-padding: 10px 0px;
+  padding: 0px;
 }
 
 .credits-text .design-and {
@@ -1005,10 +1037,28 @@ padding: 10px 0px;
   font-size: 30px;
 }
 
-.credits-text a{
+.credits-text a {
   text-decoration: underline;
   color: darkblue;
 }
-.credits-text a:hover{
-text-decoration: none;
+
+.credits-text a:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  body,
+  header {
+    width: 1366px !important;
+  }
+
+  .projects-details-container .table-holder td {
+    font-size: 40% !important;
+  }
 }

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta name="theme-color" content="#fcef2e">
+  <link rel="icon" type="image/png" href="./img/tab-logo.png" />
   <meta charset="UTF-8">
   <meta name="viewport" contsent="width=device-width, initial-scale=1.0">
 
@@ -9,7 +11,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <script type="text/javascript" src="./js/main.js"></script>
   <link rel="stylesheet" href="./resources/ionicons/css/ionicons.css">
-  <title>Wasit Shafi, MCA Student, JMI - Delhi</title>
+  <title>Mustafa Basit - Clojurist</title>
 </head>
 
 <body>
@@ -19,11 +21,13 @@
         <button class="bubble-hey">hey, I'm here</button>
         <div class="hey-anchor-container">
           <a href="https://github.com/mustafabasit74/"><img src="./img/github-round.png" title="Github"></a>
-          <a href="https://www.linkedin.com/in/mustafabasit74/"><img src="./img/linkedin round.png" title="Linkedin"></a>
+          <a href="https://www.linkedin.com/in/mustafabasit74/"><img src="./img/linkedin round.png"
+              title="Linkedin"></a>
           <a href="https://www.facebook.com/mustafabasit74"><img src="./img/facebook_round.png" title="Facebook"></a>
           <a href="https://twitter.com/mustafabasit74/"><img src="./img/twitter_round.png" title="Twitter"></a>
           <a href="https://www.instagram.com/mustafabasit74/"><img src="./img/insta_round.png" title="Instagram"></a>
-          <a href="https://www.hackerrank.com/mustafabasit74/"><img src="./img/hackerrank-round.png" title="Hacker Rank"></a>
+          <a href="https://www.hackerrank.com/mustafabasit74/"><img src="./img/hackerrank-round.png"
+              title="Hacker Rank"></a>
           <a href="mailto:mailtobasit74@gmail.com"><img src="./img/email_square.png" title="Email"></a>
           <a href=" https://wa.me/917006787893"><img src="./img/whatsapp-logo.png" title="WhatsApp"></a>
           <a href="https://telegram.im/@mustafabasit74"><img src="./img/telegram-logo.png" title="Telegram"></a>
@@ -31,16 +35,18 @@
       </div>
 
 
-      <div class="right">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#education">education</a>
-        <a href="#projects">projects</a>
-        <a href="#awards">awards &amp; certificates</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">contact</a>
+      <div class="right" id="nav-anchor-container">
+        <a class="top-nav-item" href="#home">home</a>
+        <a class="top-nav-item" href="#about">about</a>
+        <a class="top-nav-item" href="#skills">skills</a>
+        <a class="top-nav-item" href="#education">education</a>
+        <a class="top-nav-item" href="#projects">projects</a>
+        <a class="top-nav-item" href="#awards">awards &amp; certificates</a>
+        <a class="top-nav-item" href="#interests">Interests</a>
+        <a class="top-nav-item" href="#contact">contact</a>
       </div>
+
+
 
     </div>
   </header>
@@ -52,7 +58,7 @@
         <div class="left">
           <div class="hi-whole">
             <div class="hi">Hi!</div>
-            <div class="iam">I'm <b> Wasit Shafi </b></div>
+            <div class="iam">I'm <b> Mustafa Basit </b></div>
             <div class="myquote">I want to make things that make a difference.</div>
 
           </div>
@@ -70,18 +76,24 @@
         <div class="who-i-am-inner">
           <div class="who-bio">
             <div class="download-container">
-              <!-- <a href="./resources/resume.pdf" target="_blank">Download my resume</a> -->
               <a target="_blank" onclick="doTask()">Download my resume</a>
 
               <div id="snackbar">
                 <span>Thanks, Your downnload will start soon</span>
               </div>
             </div>
-            <p><img src="./img/user-home.jpg" alt=""> Hi, I'm a Front-End Developer for ChowNow in Los Angeles, CA.
-              I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.As a
-              web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and
-              my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at
-              a high growth company.
+            <p><img src="./img/user-home.jpg" alt="">
+              hi! I'm Mustafa Basit, a computer science student at the Islamic University of Science and Technology.
+              <b>I
+                love to spend most of my time in learning web technologies, writing tests, fixing uninvited bugs.</b>
+              From the
+              early beginning, I was interested in doing programming stuff, I recently switched from OPP to Functional
+              Programming. Doing things in a functional way is really fun and awesome. My goal is to speak in
+              Functional Programming conferences all over the world, I wish myself good luck. <br>
+              If you ask me to describe yourself in just one sentence I would probably say - <b>"A Developer with a
+                strong
+                passion for self-improvement"</b>
+
             </p>
 
           </div>
@@ -91,21 +103,43 @@
       <!--////////////////////////////////////////////////////////////////////////////////////////////-->
 
       <div class="tech-stack" id="skills">
-        <li class="heading-li"><span>below is my stack of skills, languages, tools, strengths ... </span>
+        <li class="heading-li"><span>below is my stack of skills, tools, strengths ... </span>
         </li>
         <div class="tech-stack-inner">
 
           <div class="tech-container">
+            <div class="tech-item-div"> <img src="./img/clojure-logo.png" alt="">
+              <li class="tech-proficiency beginner">beginner</li>
+            </div>
             <div class="tech-item-div"> <img src="./img/dot-net-logo.png" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
             <div class="tech-item-div"> <img src="./img/java-logo.png" alt="">
               <li class="tech-proficiency advanced">advanced</li>
             </div>
-            <div class="tech-item-div"> <img src="./img/python-logo.png" alt="">
-              <li class="tech-proficiency intermediate">intermediate</li>
+            <div class="tech-item-div"> <img src="./img/php-logo.png" alt="">
+              <li class="tech-proficiency advanced">advanced</li>
             </div>
             <div class="tech-item-div"> <img src="./img/csharp-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+          </div>
+
+          <div class="tech-container">
+
+            <div class="tech-item-div"> <img src="./img/node-logo.png" alt="">
+              <li class="tech-proficiency beginner">beginner</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/javascript-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/c++-logo.png" alt="">
+              <li class="tech-proficiency advanced">advanced</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/c-logo.png" alt="">
+              <li class="tech-proficiency advanced">advanced</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/assembly-logo.png" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
           </div>
@@ -117,56 +151,52 @@
             <div class="tech-item-div"> <img src="./img/css3-logo.png" alt="">
               <li class="tech-proficiency advanced">advanced</li>
             </div>
-            <div class="tech-item-div"> <img src="./img/javascript-logo.png" alt="">
+            <div class="tech-item-div"> <img src="./img/less-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/sass-logo.png" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
             <div class="tech-item-div"> <img src="./img/sql-server-logo.jpg" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
+              <li class="tech-proficiency intermediate">intermediate</li>
             </div>
           </div>
 
+
           <div class="tech-container">
+            <div class="tech-item-div"> <img src="./img/mysql-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
             <div class="tech-item-div"> <img src="./img/github-logo.png" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
+              <li class="tech-proficiency intermediate">intermediate</li>
             </div>
             <div class="tech-item-div"> <img src="./img/heroku-logo.png" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
-            <div class="tech-item-div"> <img src="./img/photoshop-logo.png" alt="">
-              <li class="tech-proficiency intermediate">intermediate</li>
-            </div>
-            <div class="tech-item-div"> <img src="./img/c++-logo.png" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
-            </div>
-          </div>
-
-
-          <div class="tech-container">
-            <div class="tech-item-div"> <img src="./img/c-logo.png" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
-            </div>
-            <div class="tech-item-div"> <img src="./img/data-structure-logo.png" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
-            </div>
-            <div class="tech-item-div"> <img src="./img/algorithms-logo.png" alt="">
-              <li class="tech-proficiency advanced">advanced</li>
-            </div>
-            <div class="tech-item-div"> <img src="./img/assembly-logo.png" alt="">
-              <li class="tech-proficiency intermediate">intermediate</li>
-            </div>
-          </div>
-
-
-          <div class="tech-container">
             <div class="tech-item-div"> <img src="./img/linux-logo.jpg" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
             <div class="tech-item-div"> <img src="./img/video-editing-logo.png" alt="">
               <li class="tech-proficiency intermediate">intermediate</li>
             </div>
-
           </div>
 
+
+          <div class="tech-container">
+            <div class="tech-item-div"> <img src="./img/Intellij-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/emacs-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/spacemacs-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+            <div class="tech-item-div"> <img src="./img/photoshop-logo.png" alt="">
+              <li class="tech-proficiency intermediate">intermediate</li>
+            </div>
+
+          </div>
 
         </div>
       </div>
@@ -183,8 +213,9 @@
               <button class="hexa">Post graduation</button>
               <div class="hexa-partner">
                 <li class="what">Master of Computer Application (M.C.A)</li>
-                <li class="percentage"><span> --% </span> <b> ( 2018 - present ) </b></li>
-                <li class="from"><a href="https://www.jmi.ac.in/" target="_blank">jamia millia islamia</a></li>
+                <li class="percentage"><span> --% </span> <b> ( 2017 - present ) </b></li>
+                <li class="from"><a href="https://www.iustlive.com/Index/Default.aspx" target="_blank">islamic
+                    university of science and technology</a></li>
               </div>
             </div>
           </div>
@@ -194,7 +225,7 @@
               <button class="hexa">graduation</button>
               <div class="hexa-partner">
                 <li class="what">Bachelor of Computer Application (B.C.A)</li>
-                <li class="percentage"><span> 74% </span> <b> ( 2014 - 2018 ) </b></li>
+                <li class="percentage"><span> 70.6% </span> <b> ( 2014 - 2018 ) </b></li>
                 <li class="from"><a href="http://www.kashmiruniversity.net/" target="_blank">kashmir
                     university</a></li>
               </div>
@@ -207,7 +238,7 @@
               <div class="hexa-partner">
                 <li class="what">commerce with stenography<sup class="as-additional"> * ( as additional subject )</sup>
                 </li>
-                <li class="percentage"><span> 76% </span> <b> ( 2013 ) </b></li>
+                <li class="percentage"><span> 73.8% </span> <b> ( 2013 ) </b></li>
                 <li class="from"><a href="http://jkbose.ac.in/default.aspx" target="_blank">GBHSS, Batamaloo</a>
                 </li>
               </div>
@@ -219,7 +250,7 @@
               <button class="hexa">matriculation</button>
               <div class="hexa-partner">
                 <li class="what">10<sup>th</sup></li>
-                <li class="percentage"><span> 62% </span> <b> ( 2011 ) </b> </li>
+                <li class="percentage"><span> 63.4% </span> <b> ( 2011 ) </b> </li>
                 <li class="from"><a href="http://jkbose.ac.in/default.aspx" target="_blank">Modern High School</a>
                 </li>
               </div>
@@ -242,75 +273,39 @@
             <div class="table-holder">
               <table>
                 <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
+                  <th>Two Wheeler Catalogue</th>
+                  <td><a href="https://github.com/mustafabasit74/Two-Wheeler-Catalog">https://github.com/ -
+                      Two-Wheeler-Catalog</a></td>
+                  <td><span><b>Tools used - </b>Asp.net, C#, MS SQL Server, Javascript, CSS </span> <br><b>Description -
+                    </b>A two wheeler catalogue project is a web application developed for users to view various two
+                    wheeler vehicles and simultaneously book them. This system overcomes the problem of searching for
+                    various kinds of models available in two wheeler vehicle. People usually go to showrooms of
+                    different brands in search of a good two wheeler vehicle that they wish to buy. This becomes
+                    confusing at a point and even consumes lot of time. Hence the project helps users to get their
+                    desired vehicle models and details online at a single place.</td>
                 </tr>
 
                 <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
+                  <th>Responsive Blog Site In PHP</th>
+                  <td><a href="https://github.com/mustafabasit74/blogForIqbalSonaullah">https://github.com/ -
+                      blogForIqbalSonaullah</a></td>
+                  <td><span><b>Tools used - </b>Php, MySQL, JavaScript</span> <br><b>Description -
+                    </b>Responsive Blog site project is developed using PHP, CSS, and JavaScript. Talking about the
+                    project, it has lots of features. A user can post blogs under the different category, add editors
+                    choice, links and view admin stats. This project is a complete blogging site for the users where
+                    different categories are divided for the users. It contains a homepage from where users can check
+                    the latest blogs. The viewer is allowed to comment through their Facebook accounts.
+                  </td>
                 </tr>
 
                 <tr>
-                  <th>Clojure for the brave</th>
+                  <th>Peg-Thing Game in Clojure</th>
                   <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
                       clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
+                  <td><span><b>Tools used - </b>Clojure, Leiningen </span> <br><b>Description -
+                    </b>A terminal implementation of Peg Thing written in Clojure. You need Leiningen to run the game
+                  </td>
                 </tr>
-
-                <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
-                </tr>
-
-                <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
-                </tr>
-
-                <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
-                </tr>
-
-                <tr>
-                  <th>Clojure for the brave</th>
-                  <td><a href="https://github.com/mustafabasit74/clojure-for-the-Brave-and-true">https://github.com -
-                      clojure-for-the-Brave-and-true</a></td>
-                  <td><span><b>Tools used - </b> html, css, javascript, php, mysql</span> <br><b>Description -
-                    </b>Mobile-focused web app where users can
-                    explore, collect, and share skate spots.Mobile-focused web app where users can explore, collect, and
-                    share skate spots.</td>
-                </tr>
-
               </table>
             </div>
 
@@ -323,50 +318,33 @@
       <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
-      <div class="projects" id="awards">
+      <div class="projects" id="awards" style="margin-top: 0px;">
         <div class="awards-inner">
           <li class="heading-li"><span>awards &amp; certificates</span></li>
           <div class="projects-details-container awards-details-container">
             <div class="table-holder">
               <table>
                 <tr>
-                  <th class="dated">machine learning course on coursera, by andrew NG, jhon MCarthy <br> <span>Dated :
-                      june, 2018</span> </th>
+                  <th class="dated">JAVA &amp; ML Industrial Training at CDAC, Mohali <br> <span>Dated :
+                      jan, 2020</span> </th>
                   <td>
                     <a
-                      href="https://www.coursera.org/specializations-deep-learning">https://www.coursera.org/specializations-deep-learning</a>
+                      href="https://www.cdac.in/index.aspx?id=mohali">https://www.cdac.in/index.aspx?id=mohali</a>
                   </td>
                 </tr>
-                <th class="dated">machine learning course on coursera, by andrew NG, jhon MCarthy <br> <span>Dated :
-                    june, 2018</span> </th>
+                <th class="dated">Participated in seven-day workshop on "digital india" <br> <span>Dated :
+                    july, 2015</span> </th>
                 <td>
                   <a
-                    href="https://www.coursera.org/specializations-deep-learning">https://www.coursera.org/specializations-deep-learning</a>
+                    href="./resources/digital-india-participation-certificate.jpg" target="_blank">Image - wdigital-india-participation-certificate</a>
                 </td>
                 </tr>
-                <th class="dated">machine learning course on coursera, by andrew NG, jhon MCarthy <br> <span>Dated :
-                    june, 2018</span> </th>
+                <th class="dated">Won Code-Fest event organised by Islamic University<br> <span>Dated :
+                    April, 2019</span> </th>
                 <td>
                   <a
-                    href="https://www.coursera.org/specializations-deep-learning">https://www.coursera.org/specializations-deep-learning</a>
+                    href="./resources/codefest-event.png">Image - CodeFest event organised By IUST</a>
                 </td>
-                </tr>
-                <th class="dated">machine learning course on coursera, by andrew NG, jhon MCarthy <br> <span>Dated :
-                    june, 2018</span> </th>
-                <td>
-                  <a
-                    href="https://www.coursera.org/specializations-deep-learning">https://www.coursera.org/specializations-deep-learning</a>
-                </td>
-                </tr>
-                <th class="dated">machine learning course on coursera, by andrew NG, jhon MCarthy <br> <span>Dated :
-                    june, 2018</span> </th>
-                <td>
-                  <a
-                    href="https://www.coursera.org/specializations-deep-learning">https://www.coursera.org/specializations-deep-learning</a>
-                </td>
-                </tr>
-
-
               </table>
             </div>
 
@@ -386,16 +364,15 @@
 
           <div class="interests-text-container">
 
-            <li class="interest-text">gamming</li>
-            <li class="interest-text">listening music</li>
+            <li class="interest-text">Functional Programming</li>
+            <li class="interest-text">Gardening</li>
             <li class="interest-text">DIY</li>
-            <li class="interest-text">gardening</li>
-            <li class="interest-text">teaching</li>
-            <li class="interest-text">travelling</li>
-            <li class="interest-text">photography</li>
-            <li class="interest-text">cooking sometimes</li>
-            <li class="interest-text">DIY</li>
-            <li class="interest-text">watching movies</li>
+            <li class="interest-text">Music</li>
+            <li class="interest-text">Reading</li>
+            <li class="interest-text">Travelling</li>
+            <li class="interest-text">Photography</li>
+            <li class="interest-text">Rubik's Cube</li>
+            <li class="interest-text">Watching Movies</li>
 
           </div>
 
@@ -414,12 +391,13 @@
           <div class="contact-divs-holder">
             <div class="contact-left">
               <li class="feel-free-to">Feel free to contact me at any point of time.</li>
-              <a class="email" href="mailto:mailtobasit74@gmail.com"> mailtobasit74@gmail.com</a>
-              <a class="call-me" href="tel:+917006787893"> +91 - 7006787893</a>
-              <a class="whatsapp" href=" https://wa.me/917006787893"> +91 - 7006787893</a>
-              <a class="telegram" href="https://telegram.im/@mustafabasit74"> @mustafabasit74</a>
-             
-              <li class="presently-in"><b>presently in - </b> <a href="https://www.google.com/maps/place/Srinagar/">Srinagar,
+              <a class="email" href="mailto:mailtobasit74@gmail.com"><b>mailtobasit74@gmail.com</b><sup> * Reply in 24
+                  Hours</sup></a>
+              <a class="call-me" href="tel:+917006787893"><b><strong class="country-code">( +91
+                    )</strong>700-678-7893</b><sup> * MON - SAT, 9AM - 8PM</sup></a>
+
+              <li class="presently-in"><b>presently in - </b> <a
+                  href="https://www.google.com/maps/place/Srinagar/">Srinagar,
                   kashmir</a></li>
             </div>
 
@@ -464,7 +442,9 @@
 
   <footer>
     <div class="credits-container">
-      <div class="credits-text">Copyright  &copy; 2020 - MUSTAFA BASIT. All Rights Reserved. <span class="design-and" >Portfolio Design and Developed with <span class="heart">&#9829;</span> by  - </span> <a href="mailto:mustafabasit74@gmail.com">mustafa basit</a> </div>
+      <div class="credits-text">Copyright &copy; 2020 - MUSTAFA BASIT. All Rights Reserved. <span
+          class="design-and">Portfolio Design and Developed with <span class="heart">&#9829;</span> by - </span> <a
+          href="mailto:mustafabasit74@gmail.com">mustafa basit</a> </div>
     </div>
   </footer>
 
