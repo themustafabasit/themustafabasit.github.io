@@ -978,14 +978,8 @@ header .right a:hover {}
 .bottom-message-form .form-email:valid,
 .bottom-message-form .form-textarea:valid {
   color: #0fc955;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-
-.bottom-message-form .form-name:valid .special-span {
-  color: #ccaa01;
-}
-
-
 
 .bottom-message-form .form-name::placeholder,
 .bottom-message-form .form-email::placeholder,
