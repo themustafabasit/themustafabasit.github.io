@@ -399,17 +399,17 @@
             <div class="contact-right">
               <li class="have-a-question">Have a question or want to work together?</li>
 
-              <form action="" method="GET" class="bottom-message-form">
+              <form action="#home" onsubmit="form_action();" method="POST" class="bottom-message-form" name="footerForm">
                 <li>
-                  <input type="text" name="name" class="form-name" placeholder="Your Name (required)" value="" required
+                  <input type="text" name="name" id="sender_name" class="form-name" placeholder="Your Name (required)" value="" required
                     minlength="4" autocomplete="off"> <span> * </span>
                 </li>
                 <li>
-                  <input type="email" name="email" class="form-email" placeholder="Your E-mail (required)" value=""
+                  <input type="email" name="email" id="sender_mailid" class="form-email" placeholder="Your E-mail (required)" value=""
                     required autocomplete="off"> <span> * </span>
                 </li>
                 <li>
-                  <textarea name="message" class="form-textarea" autocomplete="" maxlength="500" minlength="20" required
+                  <textarea name="message" id="sender_message" class="form-textarea" autocomplete="" maxlength="500" minlength="20" required
                     placeholder="Your Message ........ (required) "></textarea> <span> * </span>
                 </li>
                 <li>

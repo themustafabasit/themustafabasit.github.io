@@ -1009,7 +1009,9 @@ header .right a:hover {}
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
-  background-color: #fcef2e;
+  background-color: #fcef2e;  
+  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .credits-container {
