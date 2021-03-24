@@ -252,6 +252,7 @@ header .right a:hover {}
 
 .main-home .right .user-signature {
   width: 100%;
+  display: none;
 }
 
 
